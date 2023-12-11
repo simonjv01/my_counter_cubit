@@ -7,6 +7,10 @@ class CounterState {
     required this.counter,
   });
 
+  factory CounterState.initial() {
+    return CounterState(counter: 0);
+  }
+
   List<Object> get props => [counter];
 
   CounterState copyWith({
